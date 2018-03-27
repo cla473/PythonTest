@@ -4,7 +4,6 @@ Created on Tue Mar 27 15:13:30 2018
 
 @author: cla473
 """
-import doctest
 
 ### globals ###
 pi = 3.1416

@@ -50,7 +50,7 @@ def check_consec(int1, int2, my_list):
     >>>check_consec(34, 21, [0, 1, 1, 2, 3, 5, 8, 13, 21, 34])
     False
     """    
-    returnValue = False
+
     # combine our two ints
     myint1 = [int1, int2]
     myint2 = [int2, int1]
@@ -59,7 +59,7 @@ def check_consec(int1, int2, my_list):
         #iterate forward through the list
         for i in range(len(my_list)-1):
             myslice = my_list[i:i+2]
-            print(myslice)
+            #print(myslice)
             if (myint1 == myslice) | (myint2 == myslice):
                 returnValue = True
                 break
