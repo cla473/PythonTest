@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4a7df9d4-1b57-4dba-97a5-ca3ff7f17c87}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Rosalind.py</StartupFile>
+    <StartupFile>VariablesAndSomeArithmetic.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -20,21 +20,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AntiboticAssay.py" />
+    <Compile Include="ComplementingDNA.py" />
+    <Compile Include="ComputingGCContent.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConditionsAndLoops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CountingDNANucleotides.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Dictionaries.py" />
-    <Compile Include="example.py">
+    <Compile Include="RabbitsAndRecurenceRelations.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="create_fib.py">
+    <Compile Include="TranscribingDNAintoRNA.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Rosalind.py">
+    <Compile Include="VariablesAndSomeArithmetic.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="StringsAndLists.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="temp.py" />
-    <Compile Include="test.py" />
+    <Compile Include="PerfectBeer.py" />
+    <Compile Include="WorkingWithFiles.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input.txt" />
+    <Content Include="output.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

@@ -1,6 +1,10 @@
-# -*- coding: utf-8 -*-
 """
-Created on Tue Mar 27 10:51:58 2018
+Title:      Perfect Beer
+Purpose:    Geraldine is on a quest for the perfect beer. She's a highly superstitious person and only 
+            wants to make beer out of hop cones that follow the fibonacci sequence. She spends too much 
+            time drinking beer while counting spirals on hop cones. She's now too drunk to work out if 
+            the two numbers she has counted are consecutive elements of the fibonacci sequence. 
+            Can you help her out? 
 
 @author: cla473
 """
@@ -71,5 +75,6 @@ def check_consec(int1, int2, my_list):
     return returnValue
 
 
-mylist = create_fib(10)
 
+my_list = create_fib(10)
+check_consec(1, 2, my_list)

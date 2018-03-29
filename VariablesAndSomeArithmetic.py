@@ -1,16 +1,13 @@
-
 """
-This is a temporary script file.
+Given:  Two positive integers a and b, each less than 1000.
+Return: The integer corresponding to the square of the hypotenuse of the right triangle whose legs have lengths a and b.
 
 @author: cla473
 """
 
 def calc_hypothenuse(a, b):
+    """ The integer corresponding to the square of the hypotenuse of the right triangle whose legs have lengths 
 
-    """Creates Fibonacci sequence of specified length
-    
-    Returns:  The integer corresponding to the square of the hypotenuse of the right triangle whose legs have lengths 
-    The following are doc tests
     >>>calc_hypothenuse(3, 5)
     [34]
     >>>calc_hypothenuse(10, 30)
