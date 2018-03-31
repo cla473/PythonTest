@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4a7df9d4-1b57-4dba-97a5-ca3ff7f17c87}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>VariablesAndSomeArithmetic.py</StartupFile>
+    <StartupFile>ComputingGCContent.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -30,7 +30,13 @@
     <Compile Include="CountingDNANucleotides.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="CountingPointMutations.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Dictionaries.py" />
+    <Compile Include="MendelsFirstLaw.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="RabbitsAndRecurenceRelations.py">
       <SubType>Code</SubType>
     </Compile>
