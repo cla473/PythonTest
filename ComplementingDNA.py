@@ -5,23 +5,6 @@ Return complementing DNA
 @author: cla473
 """
 
-#Signature:  string --> string
-def reverse_string(orig_str):
-    """ return a reversed string
-
-    >>> reverse_string("Transcribing DNA into RNA")
-    'cba'
-    >>> reverse_string("abc")
-    'cba'
-    >>> reverse_string("a")
-    'a'
-    """
-    #using extended slice [begin:end:step]
-    rev_str = orig_str[::-1]
-
-    return rev_str
-
-
 
 #Sig:  string --> string
 def complement_DNA(orig_DNA):
@@ -54,6 +37,8 @@ def complement_DNA(orig_DNA):
         comp_DNA += DNA_dict[i.upper()]
     
     return comp_DNA
+
+from Genfuncs import reverse_string
 
 
 #to test both

@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4a7df9d4-1b57-4dba-97a5-ca3ff7f17c87}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>TranslatingDNAintoProtein.py</StartupFile>
+    <StartupFile>CombiningThroughTheHaystack.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -20,11 +20,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AntiboticAssay.py" />
+    <Compile Include="CombiningThroughTheHaystack.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ComplementingDNA.py" />
     <Compile Include="ComputingGCContent.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ConditionsAndLoops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsensusAndProfile.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CountingDNANucleotides.py">
@@ -34,6 +40,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Dictionaries.py" />
+    <Compile Include="Genfuncs.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MendelsFirstLaw.py">
       <SubType>Code</SubType>
     </Compile>

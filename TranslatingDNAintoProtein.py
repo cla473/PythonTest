@@ -40,25 +40,6 @@ def codon_dictionary():
     return codon_dict
 
 
-
-def split_string(orig_str, no_chars):
-    """ returns splits the orig_str into lenghts of no_chars and returns as a list
-
-    >>> split_string("AUGGCCAUG", 3)
-    ["AUG", "GCC", "AUG"]
-    """
-
-    chars_list = [orig_str[i:i+3] for i in range(0, len(orig_str), 3)]
-
-    #Alternative method
-    #pip install more-itertools
-    #from more_itertools import sliced
-    #list(sliced(dna_str, 3))
-    
-    return chars_list
-
-
-
 #signature:  string --> string
 def translate_DNA_into_Protein(dna_str):
     """ Converts an RNA string into the proten string
@@ -81,18 +62,20 @@ def translate_DNA_into_Protein(dna_str):
     #and then, investigate the string, depending on the first and second chars
     for code in codes:
         for key, value in codon_dict.items():
-            print("{}: {}".format(key, value))
 
+            #print("{}: {}".format(key, value))
             if code in value:
                 protein_str += key
                 break
  
     return protein_str
 
+    
+from Genfuncs import split_string
 
-    dna_str = "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
-    result = translate_DNA_into_Protein(dna_str)
-    print(result)
+dna_str = "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+result = translate_DNA_into_Protein(dna_str)
+print(result)
 
 
 

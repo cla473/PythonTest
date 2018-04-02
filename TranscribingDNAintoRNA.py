@@ -9,16 +9,7 @@ Return:     The transcribed RNA string of t.
 """
 
 #Sig:  string --> string
-def transcribe_DNA(orig_DNA):
-    """ returns a complementing DNA string
-    
-    >>> transcribe_DNA("GATGGAACTTGACTACGTAAATT")
-    'GAUGGAACUUGACUACGUAAAUU'
-    """
-    if len(orig_DNA) <= 1000:
-        new_DNA = orig_DNA.replace('T', 'U')
 
-    return new_DNA
-
-
-    
+from Genfuncs import transcribe_DNA
+results = transcribe_DNA("GATGGAACTTGACTACGTAAATT")
+print(results)
