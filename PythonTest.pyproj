@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4a7df9d4-1b57-4dba-97a5-ca3ff7f17c87}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>ComputingGCContent.py</StartupFile>
+    <StartupFile>TranslatingDNAintoProtein.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -41,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TranscribingDNAintoRNA.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TranslatingDNAintoProtein.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="VariablesAndSomeArithmetic.py">
