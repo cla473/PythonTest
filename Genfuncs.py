@@ -3,8 +3,8 @@ A set of generic functions:
 
 reverse_string(string) --> string
 split_string(orig_str, no_chars) --> list
+strip_leading_digits(orig_str) --> string
 transcribe_DNA(orig_DNA) --> string 
-
 
 @author: cla473
 """
@@ -41,6 +41,23 @@ def split_string(orig_str, no_chars):
     #list(sliced(dna_str, 3))
     
     return chars_list
+
+
+def strip_leading_digits(orig_str):
+    """ Strips leading digits from a string
+
+    >>> strip_leading_digits("123ABCDEF")
+    ABCDEF
+    >>> strip_leading_digits("12AB3456CD")
+    AB3456CD
+    >>> strip_leading_digits("ABCDEF")
+    ABCDEF
+    """
+    import re
+    new_str = re.sub('^\d+', '', orig_str)
+
+    return new_str
+
 
 
 def transcribe_DNA(orig_DNA):

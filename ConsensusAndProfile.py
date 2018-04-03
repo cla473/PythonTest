@@ -7,21 +7,57 @@ Return: A consensus string and profile matrix for the collection. (If several po
 """
 
 
+#Signature: string --> string, dictionary
+def find_most_likely_common_ancestor(multi_DNA_string):
+    """ evaluate DNA string o determine most likely match
+
+    >>> 
+    """
+    
+
+    #process:
+    # split the samples based on the ">Rosalind_
+    DNA_strs = multi_DNA_string.split(">Rosalind_")
+
+    # determine how many numerics are there (might be 1 or 10) and remove these,
+    dna_str = DNA_strs[1]
+    print(dna_str)
+    dna_str = strip_leading_digits(dna_str)
+
+
+    for items in DNA_strs:
+        
+    # leaving the string we want to evaluate
+
+    # get the length of this, and then define our dictionary
+    #profile_dict = {}
+    #profile_dict["A"] = ""
+    #profile_dict["C"]
+    #profile_dict["G"]
+    #profile_dict["T"]
+    #profile_dict["Concensus"]
+
+
+    return profile_dict
+
+
+from Genfuncs import strip_leading_digits
+
 samples = ">Rosalind_1"
-samples.append("ATCCAGCT")
-samples.append(">Rosalind_2")
-samples.append("GGGCAACT")
-samples.append(">Rosalind_3")
-samples.append("ATGGATCT")
-samples.append(">Rosalind_4")
-samples.append("AAGCAACC")
-samples.append(">Rosalind_5")
-samples.append("TTGGAACT")
-samples.append(">Rosalind_6")
-samples.append("ATGCCATT")
-samples.append(">Rosalind_7")
-samples.append("ATGGCACT")
+samples += "ATCCAGCT"
+samples += ">Rosalind_2"
+samples += "GGGCAACT"
+samples += ">Rosalind_3"
+samples += "ATGGATCT"
+samples += ">Rosalind_4"
+samples += "AAGCAACC"
+samples += ">Rosalind_5"
+samples += "TTGGAACT"
+samples += ">Rosalind_6"
+samples += "ATGCCATT"
+samples += ">Rosalind_7"
+samples += "ATGGCACT"
 
+multi_DNA_string = samples
 
-import numpy as np
-
+results = find_most_likely_common_ancestor(samples)
