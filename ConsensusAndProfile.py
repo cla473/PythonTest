@@ -24,20 +24,19 @@ def find_most_likely_common_ancestor(multi_DNA_string):
     print(dna_str)
     dna_str = strip_leading_digits(dna_str)
 
+    #get the lenght of the string 
+    mySize = len(dna_str)
+
+    # get the length of this, and then define our dictionary
+    profile_dict = {}
+    profile_dict["A"] = list(range(mySize))
+    profile_dict["C"] = list(range(mySize))
+    profile_dict["G"] = list(range(mySize))
+    profile_dict["T"] = list(range(mySize))
+    profile_dict["Concensus"] = list(range(mySize))
 
     for items in DNA_strs:
         
-    # leaving the string we want to evaluate
-
-    # get the length of this, and then define our dictionary
-    #profile_dict = {}
-    #profile_dict["A"] = ""
-    #profile_dict["C"]
-    #profile_dict["G"]
-    #profile_dict["T"]
-    #profile_dict["Concensus"]
-
-
     return profile_dict
 
 

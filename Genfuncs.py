@@ -14,6 +14,8 @@ transcribe_DNA(orig_DNA) --> string
 #Signature:  string --> string
 def reverse_string(orig_str):
     """ return a reversed string
+    
+    
 
     >>> reverse_string("abc")
     'cba'
